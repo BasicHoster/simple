@@ -1,0 +1,210 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0083B0 0%, #00B4DB 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Ensure no scrollbars appear */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Login Page Styles */
+.panel {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Login Input Box Styles */
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus, 
+input[type="password"]:focus {
+    border-color: #00B4DB;
+    outline: none;
+}
+
+/* Feature Page Styles */
+.feature-panel {
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-height: 80vh; /* Set maximum height to ensure responsiveness */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+    animation: fadeIn 0.5s ease;
+}
+
+.feature-panel h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #f4faff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.feature-option:hover {
+    background-color: #e1f5ff;
+}
+
+.feature-option input[type="checkbox"] {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.feature-option label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 30px;
+    background-color: #00B4DB;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0083B0;
+}
+
+/* Fade In/Out Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease;
+}
+
+
+
+
+/* Privacy Policy Panel */
+.policy-panel {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    margin: 20px;
+    max-width: 90%; /* Reducing width for smaller screens */
+    overflow-y: auto;
+    max-height: 80vh; /* Ensure the content fits vertically on smaller screens */
+}
+
+/* Headings */
+.policy-panel h1 {
+    font-size: 22px; /* Slightly smaller */
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Paragraphs */
+.policy-panel p {
+    font-size: 14px; /* Reduced size */
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* List */
+.policy-panel ul {
+    margin-bottom: 15px;
+}
+
+.policy-panel ul li {
+    font-size: 13px; /* Slightly smaller */
+    margin-bottom: 8px;
+    color: #666;
+}
+
+/* Back to Login Button */
+.policy-panel .btn {
+    display: inline-block;
+    padding: 8px 16px; /* Reduced padding */
+    background-color: #00B4DB;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.policy-panel .btn:hover {
+    background-color: #0083B0;
+}
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 768px) {
+    .policy-panel {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .policy-panel h1 {
+        font-size: 20px;
+    }
+
+    .policy-panel p,
+    .policy-panel ul li {
+        font-size: 12px;
+    }
+}

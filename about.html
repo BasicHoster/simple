@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Coding With Shuddho</title>
+    <link rel="shortcut icon" href="image/profile.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b, #ffcc33);
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 15px;
+        }
+
+        .profile h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;
+            margin: 5px 0;
+        }
+
+        .description {
+            max-width: 600px;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ff6600;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .about-container {
+                padding: 30px 15px;
+                margin: 30px auto;
+                max-width: 90%;
+            }
+
+            header {
+                font-size: 28px;
+                padding: 15px;
+            }
+
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .profile h2 {
+                font-size: 22px;
+            }
+
+            .description {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .social-links a {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-container {
+                padding: 20px 10px;
+            }
+
+            header {
+                font-size: 24px;
+                padding: 10px;
+            }
+
+            .profile img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .profile h2 {
+                font-size: 20px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .social-links a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        About Me
+    </header>
+    <section class="about-container">
+        <div class="profile">
+            <img src="image/profile.png" alt="Channel Logo">
+            <h2>Coding With Shuddho</h2>
+            <p>Bringing you the best coding tutorials, tips, and tricks!</p>
+        </div>
+        <div class="description">
+            <h3>Who I Are</h3>
+            <p>Welcome to my coding YouTube channel! I'm passionate developers dedicated to sharing our knowledge with the world. Whether you're a beginner or an expert, we have something for everyone.</p>
+            <h3>What I Do</h3>
+            <p>My channel covers programming tutorials, project walkthroughs, coding challenges, and much more. Join us as we explore the world of web development, software engineering, and beyond.</p>
+            <h3>Follow Us On</h3>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@CodingWithShuddho/videos" target="_blank">YouTube</a>
+                <a href="https://x.com/ShuddhoSarker1" target="_blank">Twitter</a>
+                <a href="https://github.com/BasicHoster" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
